@@ -1,8 +1,11 @@
 language: node_js
-
 node_js:
-  - "12"
-
+- '12'
 script:
-  - npm test
-  - npm run build
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: Travis CI/CD
+  api_key:
+    secure: uAn0qc6fi5yg4v8wcdUB+96Q4SfbQPcdmHDl4VJMkHFN3GVw/pJwgNbxt0E3rK/rzGDlPOigxBkRcwV2UqD1b8PcGKLEB3jk5varAKwHKXVrOXCogk5eSQsOt5UWLSjldRGfmkxVy1UpSKQgdmfh9uZkWFrs+4C9hchr9a+Z+bP+B6yoAFMbrO8uAeMhTHSq4lla8xNvCE7NhjxKaiGd1P6wGVsnmuRwM4FrEjCsX5QPVIxAn9ZviXiEb9HhjAqF5ja4PonKjr/rAsa9//cGvAQevSY8BujDeZHZZn72bIMJVxgIn6bK1A3M6sDb/Oq8J9+WIJ64IFKToPswJY7uEZ7I97H/QISfWFkfMAlheQPv0/BPjpbnoorB6ybDQVhxbOlX8hlIUL346yDk4dfM44hWd7v1HCC42zRD7oOt3X/B6s8RNqAXWLwEOAZ46Df/N+6njhQ24GIFafnKf81soLJ8RWp2hLPydOoojV+X3o3gBwkdc+EB8XIvQKJpldVQLxSXKb8noKA1BBU0FkM6I3sIHjdovpehtotq3SXQz+RJGUE3z2fbxyIqk3P97+dGGAR27raFPQgYYp+z3m9QFf+rKt7ef5mFUiS8adpH3739wMe0LW2EGl6yzql4v8nKa/ShCTQQFGo8w/6il8BXW6yyNH9viliQuXnHgl1IAV0=
